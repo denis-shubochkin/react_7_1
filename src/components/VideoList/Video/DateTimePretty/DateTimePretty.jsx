@@ -18,7 +18,6 @@ export default function DateTimePretty(Component) {
       else {
         date = `${now.diff(dateOrig, 'days')} дней назад`;
       }
-      console.log('Разница в ', now.diff(dateOrig, 'hours'), 'часов');
-      return <Component {...props} date={date} />
+     return <Component {...props} date={date} />
     }
   }
